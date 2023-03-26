@@ -3,64 +3,82 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tunturipojat</title>
   <style>
     body {
-  font-family: Arial, sans-serif;
-  color: #444;
-  background-color: #f5f5f5;
-}
+      font-family: Arial, sans-serif;
+      color: #444;
+      background-color: #f5f5f5;
+    }
 
-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #fff;
-  padding: 20px;
-  box-shadow: 0px 3px 3px #ccc;
-}
+    header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #fff;
+      padding: 20px;
+      box-shadow: 0px 3px 3px #ccc;
+    }
 
-header img {
-  max-width: 70%;
-  height: auto;
-  margin-top: 20px;
-}
+    header img {
+      max-width: 70%;
+      height: auto;
+      margin-top: 20px;
+    }
 
-main {
-  margin: 30px;
-}
+    main {
+      margin: 30px;
+    }
 
-section {
-  margin-bottom: 30px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #ccc;
-}
+    section {
+      margin-bottom: 30px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #ccc;
+    }
 
-h1, h2, h3 {
-  color: #222;
-}
+    h1, h2, h3 {
+      color: #222;
+    }
 
-footer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  background-color: #fff;
-  padding: 20px;
-  box-shadow: 0px -3px 3px #ccc;
-}
+    footer {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      background-color: #fff;
+      padding: 20px;
+      box-shadow: 0px -3px 3px #ccc;
+    }
 
-footer img {
-  max-width: 40%;
-  height: auto;
-  margin: 20px;
-}
+    footer img {
+      max-width: 30%;
+      height: 30%;
+      margin: 20px;
+    }
 
-@media (max-width: 768px) {
-  main {
-    margin: 10px;
-  }
-}</style>
-  <title>Tunturipojat</title>
-  <link rel="stylesheet" href="style.css">
+    @media (max-width: 768px) {
+      main {
+        margin: 10px;
+      }
+    }
+
+    #contact {
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    .social-media-links a {
+      display: inline-block;
+      background-color: #222;
+      color: #fff;
+      padding: 10px 20px;
+      margin-top: 10px;
+      text-decoration: none;
+    }
+
+    .social-media-links a:hover {
+      background-color: #444;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -72,23 +90,18 @@ footer img {
       <h2>Tietoa meistä</h2>
       <p>Tunturipojat on Ylioppilaskunnan Laulajista ponnistanut kuuden hengen lauluyhtye. Vuonna 2017 YL juhlisti 100-vuotiasta Suomea herättämällä eloon ylioppilaiden kesäkuoroperinteen. Valkolakkisten laulajien kesäkonsertteja oli kuultu ympäri Suomen niemen jo 1800-luvulla, ja samaan tapaan kiersivät kvartetit ja pienyhtyeet maatamme kesällä 2017 keräten samalla varoja luonnonsuojelun hyväksi. YL:ssä tutustunut kuusikko esiintyi sinä kesänä Äkäslompolossa, Tunturipojat-sekstetti oli syntynyt.</p>
       <p>Tämä kuusihenkinen lauluyhtye on erittäin monipuolinen, sillä ääniä on enemmän kuin perinteisessä kvartetissa, mikä mahdollistaa monipuolisemman äänimaiseman. Ohjelmistoon kuuluu perinteinen kansallisromanttinen mieskuoromusiikki, hartaat teokset, serenadit sekä myös viihteellisempi nykymusiikki. Tämä tekee Tunturipojat-sekstetistä erittäin monipuolisen ja yleisöystävällisen.</p>
-    </section>
+</section>
+
   </main>
   <footer>
-    <img src="Eero.jpg" alt="Tunturipojat">
-    <img src="Tuomas.jpg" alt="Tunturipojat">
+    <img src="Ryhmä1.jpg" alt="Tunturipojat">
+    <img src="Ryhmä2.jpg" alt="Tunturipojat">
   </footer>
   <section id="contact">
-                <h2>Ota yhteyttä!</h2>
-                <p>Haluatko juhliisi unohtumattoman musiikkielämyksen? Tunturipojat tarjoaa ammattitaidolla toteutetut esiintymiset merkkipäiville, häihin, hautajaisiin ja muihin tilaisuuksiin. Toteutamme ohjelmistomme toiveidesi mukaan ja tuomme juhlaasi ikimuistoisen tunnelman. Ota yhteyttä ja tilaa Tunturipojat keikalle!</p>
-                <p>Lähetä meille sähköpostia osoitteeseen <a href="mailto:tunturipojat@example.com">tunturipojat@example.com</a> </p>
-                <p>Seuraa meitä myös Instagramissa:</p>
-                <div class="social-media-links">
-                  <a href="https://www.instagram.com/tunturipojat">
-                    <span>Instagramissa</span>
-                  </a>
-                </div>
-              </section>
+    <h2>Ota yhteyttä!</h2>
+    <p>Haluatko juhliisi unohtumattoman musiikkielämyksen? Tunturipojat tarjoaa ammattitaidolla toteutetut esiintymiset merkkipäiville, häihin, hautajaisiin ja muihin tilaisuuksiin. Toteutamme ohjelmistomme toiveidesi mukaan ja tuomme juhlaasi ikimuistoisen tunnelman. Ota yhteyttä ja tilaa Tunturipojat keikalle!</p>
+    <p>Lähetä meille sähköpostia osoitteeseen <a href="mailto:tunturipojat@example.com">tunturipojat@example.com</a></p>
+    <p>Seuraa meitä myös <a href="https://www.instagram.com/tunturipojat">Instagramissa</a></p>
+  </section>
 </body>
 </html>
-</html
