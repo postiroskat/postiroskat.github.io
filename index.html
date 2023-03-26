@@ -5,6 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tunturipojat</title>
   <style>
+      section p {
+    font-size: 16px;
+    margin-right: 20%;
+    margin-left: 20%;
+  }
     body {
       font-family: Arial, sans-serif;
       color: #444;
@@ -17,13 +22,27 @@
       align-items: center;
       background-color: #fff;
       padding: 20px;
-      box-shadow: 0px 3px 3px #ccc;
+      position: relative;
     }
 
     header img {
-      max-width: 70%;
+      max-width: 100%;
       height: auto;
       margin-top: 20px;
+    }
+
+    header h1 {
+      font-size: 66px;
+      font-weight: 700;
+      margin-top: 0;
+      color: #fff;
+      text-align: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-family: Montserrat, sans-serif;
+      z-index: 1;
     }
 
     main {
@@ -33,11 +52,14 @@
     section {
       margin-bottom: 30px;
       padding-bottom: 20px;
-      border-bottom: 1px solid #ccc;
+
     }
 
     h1, h2, h3 {
       color: #222;
+      margin-right: 20%;
+      margin-left: 20%;
+      margin-top: 50px;
     }
 
     footer {
@@ -46,12 +68,11 @@
       justify-content: space-around;
       background-color: #fff;
       padding: 20px;
-      box-shadow: 0px -3px 3px #ccc;
     }
 
     footer img {
-      max-width: 30%;
-      height: 30%;
+      max-width: 60%;
+      height: auto;
       margin: 20px;
     }
 
@@ -82,20 +103,20 @@
 </head>
 <body>
   <header>
-    <h1>Tunturipojat</h1>
     <img src="tunturipojat.jpg" alt="Tunturipojat">
+    <h1>Tunturipojat</h1>
   </header>
   <main>
     <section>
       <h2>Tietoa meistä</h2>
-      <p>Tunturipojat on Ylioppilaskunnan Laulajista ponnistanut kuuden hengen lauluyhtye. Vuonna 2017 YL juhlisti 100-vuotiasta Suomea herättämällä eloon ylioppilaiden kesäkuoroperinteen. Valkolakkisten laulajien kesäkonsertteja oli kuultu ympäri Suomen niemen jo 1800-luvulla, ja samaan tapaan kiersivät kvartetit ja pienyhtyeet maatamme kesällä 2017 keräten samalla varoja luonnonsuojelun hyväksi. YL:ssä tutustunut kuusikko esiintyi sinä kesänä Äkäslompolossa, Tunturipojat-sekstetti oli syntynyt.</p>
-      <p>Tämä kuusihenkinen lauluyhtye on erittäin monipuolinen, sillä ääniä on enemmän kuin perinteisessä kvartetissa, mikä mahdollistaa monipuolisemman äänimaiseman. Ohjelmistoon kuuluu perinteinen kansallisromanttinen mieskuoromusiikki, hartaat teokset, serenadit sekä myös viihteellisempi nykymusiikki. Tämä tekee Tunturipojat-sekstetistä erittäin monipuolisen ja yleisöystävällisen.</p>
+      <p>Tunturipojat on Ylioppilaskunnan Laulajista ponnistanut kuuden hengen lauluyhtye. Vuonna 2017 YL juhlisti 100-vuotiasta Suomea herättämällä eloon ylioppilaiden kesäkuoroperinteen. Valkolakkisten laulajien kesäkonsertteja oli kuultu ympäri Suomen niemen jo 1800-luvulla, ja samaan tapaan kiersivät kvartetit ja pienyyt maatamme kesällä 2017 keräten samalla varoja luonnonsuojelun hyväksi. YL:ssä tutustunut kuusikko esiintyi sinä kesänä Äkäslompolossa, Tunturipojat-sekstetti oli syntynyt.</p>
+<p>Tämä kuusihenkinen lauluyhtye on erittäin monipuolinen, sillä ääniä on enemmän kuin perinteisessä kvartetissa, mikä mahdollistaa monipuolisemman äänimaiseman. Ohjelmistoon kuuluu perinteinen kansallisromanttinen mieskuoromusiikki, hartaat teokset, serenadit sekä myös viihteellisempi nykymusiikki. Tämä tekee Tunturipojat-sekstetistä erittäin monipuolisen ja yleisöystävällisen.</p>
 </section>
 
   </main>
   <footer>
     <img src="Ryhmä1.jpg" alt="Tunturipojat">
-    <img src="Ryhmä2.jpg" alt="Tunturipojat">
+
   </footer>
   <section id="contact">
     <h2>Ota yhteyttä!</h2>
@@ -103,5 +124,8 @@
     <p>Lähetä meille sähköpostia osoitteeseen <a href="mailto:tunturipojat@example.com">tunturipojat@example.com</a></p>
     <p>Seuraa meitä myös <a href="https://www.instagram.com/tunturipojat">Instagramissa</a></p>
   </section>
+    <footer>
+      <img src="Ryhmä2.jpg" alt="Tunturipojat">
+        </footer>
 </body>
 </html>
