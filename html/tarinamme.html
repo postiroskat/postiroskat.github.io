@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tunturipojat</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            background-color: black;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 0.5%;
+        }
+        .navbar a {
+            text-decoration: none;
+            color: white;
+            margin: 0 10px;
+            font-size: 24px;
+        }
+        .navbar h2 {
+            text-decoration: none;
+            color: white;
+            margin: 0 10px;
+            font-size: 24px;
+        }        
+        .content {
+            margin-top: 60px;
+        }
+        h1 {
+            font-family: "American Typewriter", serif;
+            margin-bottom: 1%;
+            margin-top: 2%;
+            font-size: 42px;
+        }
+        h2 {
+            font-family: "American Typewriter", serif;
+            margin-bottom: 3%;
+            margin-top: 3%;
+            font-size: 42px;
+        }
+        img {
+            margin-top: 3%;
+            max-width: 100%;
+        }
+        footer img {
+            max-width: 50%;
+        }
+        p {
+            margin-bottom: 1%;
+            padding-bottom: 1%;
+        }
+        .section {
+            margin: 5%;
+        }
+        .contact-info {
+            align-items: center;
+        }
+        .instagram-icon {
+            margin-top: 4%;
+            margin-left: 10px;
+            width: 30px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="../index.html"><h2>Tunturipojat</h2></a>
+        <a href="tarinamme.html">Tarinamme</a>
+        <a href="esiintymiset.html">Esiintymiset</a>
+        <a href="../index.html#ota-yhteytta">Ota yhteyttä</a>
+    </nav>
+    <div class="content">
+            <header id="me" class="otsikko">
+            <img src="junakuva.jpg" alt="Tunturipojat yöjunassa">
+            <h1>Tarinamme</h1>
+            <section id="me" class="section">
+            <p>Tunturipojat on Ylioppilaskunnan Laulajista ponnistanut kuuden hengen lauluyhtye. Vuonna 2017 YL juhlisti 100-vuotiasta Suomea herättämällä eloon ylioppilaiden kesäkuoroperinteen. Valkolakkisten laulajien kesäkonsertteja oli kuultu ympäri Suomen niemen jo 1800-luvulla, ja samaan tapaan kiersivät kvartetit ja pienyhtyeet maatamme kesällä 2017 keräten samalla varoja luonnonsuojelun hyväksi. YL:ssä tutustunut kuusikko esiintyi sinä kesänä Äkäslompolossa, Tunturipojat-sekstetti oli syntynyt.</p>
+            <footer>
+            <img src="ryhma1.jpg" alt="Tunturipojat Särestöniemessä">
+            </footer>
+        </section>
+    </div>
+    <script>
+        document.querySelectorAll('.navbar a').forEach(link => {
+            link.addEventListener('click', e => {
+            const id = e.target.getAttribute('href');
+            if (id !== 'index.html') {
+                e.preventDefault();
+                const id = e.target.getAttribute('href');
+                const section = document.querySelector(id);
+                window.scrollTo({
+                    top: section.offsetTop - 50,
+                    behavior: 'smooth',
+                });
+            });
+        });
+    </script>
+</body>
+</html>
