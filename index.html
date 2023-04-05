@@ -16,7 +16,7 @@
         }
         .navbar {
             display: flex;
-            flex-wrap: wrap; /* Add this line */
+            flex-wrap: wrap;
             justify-content: space-between;
             background-color: black;
             position: fixed;
@@ -37,13 +37,22 @@
             color: white;
             margin: 0 10px;
             font-size: 24px;
-            width: 100%; /* Add this line */
+            width: 100%;
         }
+
         @media (max-width: 600px) {
-        .navbar h2 {
-        margin-top: 0; /* Add this line to remove top margin on small screens */
-    }
-}
+            .navbar h2 {
+                margin-top: 0;
+            }
+            .navbar a {
+                font-size: 18px;
+                margin: 0 5px;
+            }
+            .navbar {
+                flex-direction: column;
+            }
+        }
+
         .content {
             margin-top: 60px;
         }
@@ -61,9 +70,6 @@
         }
         img {
             margin-top: 3%;
-            max-width: 100%;
-        }
-        img header {
             max-width: 100%;
         }
         p {
@@ -104,31 +110,31 @@
             <p>Ylioppilaskunnan Laulajien riveistä ponnistanut kuusihenkinen lauluyhtye, perustettu Lapin kesässä 2017.</p>
             <p>Meitä inspiroi mieskuoroteokset, Toivo Kuula, Suomen luonto ja jylhät tunturit.</p>
             <img src="sarestoniemi.jpg" alt="Tunturipojat Särestöniemessä">
-        </section>
-        <section id="ota-yhteytta" class="section">
+            </section>
+            <section id="ota-yhteytta" class="section">
             <h2>Ota yhteyttä</h2>
             <p>Tunturipojat on monipuolinen lauluyhtye, joka sopii erilaisiin tilaisuuksiin. Ota yhteyttä ja tilaa meidät esiintymään!</p>
             <div class="contact-info">
-                <p>Lähetä meille sähköpostia osoitteeseen <a href="mailto:eero@tunturipojat.fi">eero@tunturipojat.fi</a></p>
-    <a href="https://www.instagram.com/tunturipojat" target="_blank" rel="noopener noreferrer" class="instagram"></a>
+            <p>Lähetä meille sähköpostia osoitteeseen <a href="mailto:eero@tunturipojat.fi">eero@tunturipojat.fi</a></p>
+            <a href="https://www.instagram.com/tunturipojat" target="_blank" rel="noopener noreferrer" class="instagram"></a>
             </div>
-        </section>
-    </div>
-    <script>
-        document.querySelectorAll('.navbar a').forEach(link => {
+            </section>
+            </div>
+            <script>
+            document.querySelectorAll('.navbar a').forEach(link => {
             link.addEventListener('click', e => {
             const id = e.target.getAttribute('href');
-            if (id !== 'index.html''html/tarinamme.html''html/esiintymiset.html') {
-                e.preventDefault();
-                const id = e.target.getAttribute('href');
-                const section = document.querySelector(id);
-                window.scrollTo({
-                    top: section.offsetTop - 50,
-                    behavior: 'smooth',
-                });
+            if (id.startsWith('#')) {
+            e.preventDefault();
+            const section = document.querySelector(id);
+            window.scrollTo({
+            top: section.offsetTop - 50,
+            behavior: 'smooth',
+            });
             }
             });
-        });
-    </script>
-</body>
-</html>
+            });
+            </script>
+
+            </body>
+            </html>
