@@ -14,44 +14,49 @@
             text-align: center;
             font-family: Arial, sans-serif;
         }
-        .navbar {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            background-color: black;
-            position: fixed;
-            top: 0;
-            width: 100%;
-            padding: 0.5%;
-        }
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 0.5%;
+}
 
-        .navbar a {
-            text-decoration: none;
-            color: white;
-            margin: 0 10px;
-            font-size: 24px;
-        }
+.navbar a {
+    text-decoration: none;
+    color: white;
+    margin: 0 10px;
+    font-size: 24px;
+}
 
-        .navbar h2 {
-            text-decoration: none;
-            color: white;
-            margin: 0 10px;
-            font-size: 24px;
-            width: 100%;
-        }
+.navbar h2 {
+    text-decoration: none;
+    color: white;
+    margin: 0 10px;
+    font-size: 24px;
+    width: 100%;
+}
 
-        @media (max-width: 600px) {
-            .navbar h2 {
-                margin-top: 0;
-            }
-            .navbar a {
-                font-size: 18px;
-                margin: 0 5px;
-            }
-            .navbar {
-                flex-direction: row;
-            }
-        }
+/* Add a media query to control the layout on smaller screens */
+@media (max-width: 600px) {
+    .navbar h2 {
+        margin-top: 0;
+    }
+    .navbar a {
+        font-size: 18px;
+        margin: 0 5px;
+    }
+    .navbar {
+        flex-direction: column; /* Change to column layout for smaller screens */
+        align-items: center; /* Center the items vertically */
+    }
+    .nav-links {
+        margin-top: 10px; /* Add some space between the main title and the smaller buttons */
+    }
+}
 
         .content {
             margin-top: 60px;
@@ -96,12 +101,14 @@
     </style>
 </head>
 <body>
-    <nav class="navbar">
-        <a href="index.html"><h2>Tunturipojat</h2></a>
+<nav class="navbar">
+    <a href="index.html"><h2>Tunturipojat</h2></a>
+    <div class="nav-links">
         <a href="html/tarinamme.html">Tarinamme</a>
         <a href="html/esiintymiset.html">Esiintymiset</a>
         <a href="#ota-yhteytta">Ota yhteyttä</a>
-    </nav>
+    </div>
+</nav>
     <div class="content">
             <header id="me" class="otsikko">
             <img src="ryhmakuva.jpg" alt="Tunturipojat tunturissa">
