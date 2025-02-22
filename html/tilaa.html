@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tunturipojat</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 0.5%;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    margin: 0 10px;
+    font-size: 24px;
+}
+
+.navbar h2 {
+    text-decoration: none;
+    color: white;
+    margin: 0 10px;
+    font-size: 44px;
+    width: 100%;
+}
+
+/* Add a media query to control the layout on smaller screens */
+@media (max-width: 600px) {
+    .navbar h2 {
+        margin-top: 0;
+    }
+    .navbar a {
+        font-size: 18px;
+        margin: 0 5px;
+    }
+    .navbar {
+        flex-direction: column; /* Change to column layout for smaller screens */
+        align-items: center; /* Center the items vertically */
+    }
+    .nav-links {
+        margin-top: 10px; /* Add some space between the main title and the smaller buttons */
+    }
+}
+
+        .content {
+            margin-top: 60px;
+        }
+        h1 {
+            font-family: "Verdana Pro Light", Verdana, sans-serif;
+            margin-bottom: 1%;
+            margin-top: 2%;
+            font-size: 42px;
+        }
+        h2 {
+            font-family: "Verdana Pro Light", Verdana, sans-serif;
+            margin-bottom: 3%;
+            margin-top: -2%;
+            font-size: 24px;
+        }
+        img {
+            margin-top: 3%;
+            margin-bottom: 3%;
+            max-width: 100%;
+        }
+        p {
+            margin-bottom: 1%;
+            padding-bottom: 1%;
+        }
+        .section {
+            margin: 5%;
+        }
+        .contact-info {
+            align-items: center;
+        }
+        .instagram {
+            display: block;
+            width: 3rem;
+            height: 3rem;
+            margin: 0 auto;
+            background-image: url("https://www.instagram.com/static/images/ico/favicon-192.png/68d99ba29cc8.png");
+            background-size: cover;
+            background-position: center;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar">
+    <a href="index.html"><h2>Tunturipojat</h2></a>
+    <div class="nav-links">
+        <a href="html/tarinamme.html">Tarinamme</a>
+        <a href="html/esiintymiset.html">Esiintymiset</a>
+        <a href="#ota-yhteytta">Ota yhteyttä</a>
+    </div>
+</nav>
+    <div class="content">
+            <header id="me" class="otsikko">
+            <h1>Klassikoita tai kevyttä - Tilaa Tunturipojat juhlaasi!</h1>
+            <section id="me" class="section">
+
+            <section id="me" class="section">
+            <p>Tunturipojat jatkavat Ylioppilaskunnan Laulajien kvartettiperinteitä, jotka ulottuvat aina 1800-luvulle saakka.</p>
+            <p>Tunturipoikien sekstetti sopii niin arvokkaisiin juhlatilaisuuksiin, osaksi konferenssien asiaohjelmaa, syntymäpäiviin kuin rentoihin kesätilaisuuksiinkin. Meiltä luonnistuvat niin mieskuoroklassikot, serenadit, juomalaulut kuin ikivihreätkin. Autamme mielellämme ohjelman suunnittelussa ja kappalevalinnoissa. Seremoniamestarimme huolehtii myös spiikeistä, jotka tuovat hymyn huulille osana musiikkiesitystämme.</p>
+            <p>Ota yhtyettä ja tee juhlastasi ikimuistoinen Tunturipoikien uljaan laulun voimin!</p>
+            <p>Eero Mäki-Lohiluoma</p>
+            <p>Puheenjohtaja</p>
+            <p>040 771 5111</p>
+            <p><a href="mailto:info@tunturipojat.fi">info@tunturipojat.fi</a></p>
+              <p>Seuraa meitä Instagramissa:</p>
+            <a href="https://www.instagram.com/tunturipojat" target="_blank" rel="noopener noreferrer" class="instagram"></a>
+            </div>
+            </section>
+            </div>
+            <script>
+            document.querySelectorAll('.navbar a').forEach(link => {
+            link.addEventListener('click', e => {
+            const id = e.target.getAttribute('href');
+            if (id.startsWith('#')) {
+            e.preventDefault();
+            const section = document.querySelector(id);
+            window.scrollTo({
+            top: section.offsetTop - 50,
+            behavior: 'smooth',
+            });
+            }
+            });
+            });
+            </script>
+
+            </body>
+            </html>
