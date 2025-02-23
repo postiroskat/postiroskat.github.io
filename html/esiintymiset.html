@@ -41,27 +41,6 @@
     width: 100%;
 }
 
-/* Add a media query to control the layout on smaller screens */
-@media (max-width: 600px) {
-    .navbar h2 {
-        margin-top: 10;
-    }
-    .navbar a {
-        font-size: 18px;
-        margin: 0 5px;
-    }
-    .navbar {
-        flex-direction: column; /* Change to column layout for smaller screens */
-        align-items: center; /* Center the items vertically */
-    }
-    .nav-links {
-        margin-top: 10px; /* Add some space between the main title and the smaller buttons */
-    }
-    body {
-        padding-top: 14%; /* Säädä arvoa tarpeen mukaan */
-    }
-}
-
         .content {
             margin-top: 60px;
         }
@@ -118,6 +97,26 @@
             border-radius: 50%;
             cursor: pointer;
         }
+        /* Add a media query to control the layout on smaller screens */
+@media (max-width: 600px) {
+    .navbar h2 {
+        margin-top: 10;
+    }
+    .navbar a {
+        font-size: 18px;
+        margin: 0 5px;
+    }
+    .navbar {
+        flex-direction: column; /* Change to column layout for smaller screens */
+        align-items: center; /* Center the items vertically */
+    }
+    .nav-links {
+        margin-top: 10px; /* Add some space between the main title and the smaller buttons */
+    }
+    p {
+        margin-bottom: 5%;
+    }
+}
     </style>
 </head>
 <body>
