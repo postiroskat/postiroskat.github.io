@@ -1,4 +1,4 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fi">
 <head>
     <meta charset="UTF-8">
@@ -24,7 +24,7 @@
             position: fixed;
             top: 0;
             width: 100%;
-            padding: 10px;
+            padding: 0.5%;
             align-items: center;
         }
         .navbar a {
@@ -37,6 +37,7 @@
             color: white;
             font-size: 36px;
             margin: 0;
+            width: 100%;
         }
         .content {
             margin-top: 120px;
@@ -60,7 +61,7 @@
             margin-bottom: 15px;
         }
         img {
-            max-width: 100%;
+            max-width: 95%;
             margin: 20px 0;
         }
         p {
@@ -70,6 +71,17 @@
         }
         .section {
             margin: 40px 0;
+        }
+        .instagram {
+            display: block;
+            width: 3rem;
+            height: 3rem;
+            margin: 20px auto;
+            background-image: url("https://www.instagram.com/static/images/ico/favicon-192.png/68d99ba29cc8.png");
+            background-size: cover;
+            background-position: center;
+            border-radius: 50%;
+            cursor: pointer;
         }
         @media (max-width: 600px) {
             .navbar {
@@ -109,6 +121,24 @@
         <p>29.6.2024 Hääjuhla, Espoo</p>
         <p>20.7.2024 Morsiusmessu ja hääjuhla, Lohja</p>
         <p>28.9.2024 Hääjuhla, Espoo & Kirkkonummi</p>
+        <p>Seuraa meitä Instagramissa:</p>
+        <a href="https://www.instagram.com/tunturipojat" target="_blank" rel="noopener noreferrer" class="instagram"></a>
     </div>
+
+    <script>
+        document.querySelectorAll('.navbar a').forEach(link => {
+            link.addEventListener('click', e => {
+                const id = e.target.getAttribute('href');
+                if (id.startsWith('#')) {
+                    e.preventDefault();
+                    const section = document.querySelector(id);
+                    window.scrollTo({
+                        top: section.offsetTop - 50,
+                        behavior: 'smooth',
+                    });
+                }
+            });
+        });
+    </script>
 </body>
 </html>
