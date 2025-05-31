@@ -1,13 +1,14 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="fi">
 <head>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;700&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tunturipojat</title>
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;700&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <style>
-        /* Yleiset tyylit */
         * {
             margin: 0;
             padding: 0;
@@ -17,128 +18,145 @@
             font-family: 'Crimson Pro', sans-serif;
             text-align: center;
         }
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 0.5%;
+}
 
-        /* Navigaatiopalkki */
-        .navbar {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            align-items: center;
-            background-color: black;
-            position: fixed;
-            top: 0;
-            width: 100%;
-            padding: 10px;
-            z-index: 1000;
-        }
-        .navbar h2 a {
-            text-decoration: none;
-            color: white;
-            font-size: 44px;
-        }
-        .navbar .nav-links a {
-            text-decoration: none;
-            color: white;
-            margin: 0 10px;
-            font-size: 24px;
-        }
+.navbar a {
+    text-decoration: none;
+    color: white;
+    margin: 0 10px;
+    font-size: 24px;
+}
 
-        /* Responsiivinen muotoilu mobiililaitteille */
-        @media (max-width: 600px) {
-            .navbar {
-                flex-direction: column;
-                align-items: center;
-            }
-            .navbar .nav-links {
-                margin-top: 10px;
-            }
-            .navbar .nav-links a {
-                font-size: 18px;
-                margin: 5px;
-            }
-            .content2 {
-                margin: 15% 5%;
-            }
-        }
+.navbar h2 {
+    text-decoration: none;
+    color: white;
+    margin: 0 10px;
+    font-size: 44px;
+    width: 100%;
+}
 
-        /* Pääsisällön tyylit */
-        .content {
-            margin-top: 120px;
+
+
+    .content {
+        margin-top: 120px;
         }
-        .content2 {
-            margin: 0 15%;
-        }
-        h1, h2, h3 {
-            font-family: 'Oswald', sans-serif;
-            margin-bottom: 2%;
+    .content2 {
+        margin-top: 60px;
+        margin: 0 15%; /* 0 ylhäällä ja alhaalla, 20px oikealla ja vasemmalla */
         }
         h1 {
+            font-family: 'Oswald', sans-serif;
+            margin: 0 5%; /* 0 ylhäällä ja alhaalla, 20px oikealla ja vasemmalla */
+            margin-bottom: 1%;
+            margin-top: 2%;
             font-size: 24px;
         }
         h2 {
+            font-family: 'Oswald', sans-serif;   
+            margin-bottom: 3%;
+            margin-top: -2%;
             font-size: 24px;
         }
-        h3 {
-            font-size: 22px;
-        }
         img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin: 3% auto;
+            margin-top: 3%;
+            margin-bottom: 3%;
+            max-width: 95%;
         }
         p {
             font-family: 'Crimson Pro', sans-serif;
+            margin-bottom: 1%;
+            padding-bottom: 1%;
             text-align: justify;
             hyphens: auto;
-            margin-bottom: 1%;
         }
+        .section {
+            margin: 5%;
+        }
+        .contact-info {
+            align-items: center;
+        }
+        .instagram {
+            display: block;
+            width: 3rem;
+            height: 3rem;
+            margin: 0 auto;
+            background-image: url("https://www.instagram.com/static/images/ico/favicon-192.png/68d99ba29cc8.png");
+            background-size: cover;
+            background-position: center;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        /* Add a media query to control the layout on smaller screens */
+@media (max-width: 600px) {
+    .navbar h2 {
+        margin-top: 0;
+    }
+    .navbar a {
+        font-size: 18px;
+        margin: 0 5px;
+    }
+    .navbar {
+        flex-direction: column; /* Change to column layout for smaller screens */
+        align-items: center; /* Center the items vertically */
+    }
+    .nav-links {
+        margin-top: 10px; /* Add some space between the main title and the smaller buttons */
+    }
+    img {
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+}
     </style>
 </head>
 <body>
-    <nav class="navbar">
-        <h2><a href="../index.html">Tunturipojat</a></h2>
-        <div class="nav-links">
-            <a href="tarinamme.html">Tarinamme</a>
-            <a href="esiintymiset.html">Esiintymiset</a>
-            <a href="tilaa.html">Tilaa</a>
-        </div>
-    </nav>
-
+<nav class="navbar">
+    <a href="../index.html"><h2>Tunturipojat</h2></a>
+    <div class="nav-links">
+        <a href="tarinamme.html">Tarinamme</a>
+        <a href="esiintymiset.html">Esiintymiset</a>
+        <a href="tilaa.html">Tilaa</a>
+    </div>
+</nav>
     <div class="content">
-        <header>
             <h1>Kesäkuoroperinteestä syntynyt, Lapin jylhissä maisemissa perustettu</h1>
-        </header>
-    </div>
-
+    </div>   
     <div class="content2">
-        <section>
-            <p>Tunturipojat on Ylioppilaskunnan Laulajista ponnistanut kuuden hengen lauluyhtye. Vuonna 2017 YL juhlisti 100-vuotiasta Suomea herättämällä eloon ylioppilaiden kesäkuoroperinteen. Valkolakkisten laulajien kesäkonsertteja oli kuultu ympäri Suomen niemen jo 1800-luvulla, ja samaan tapaan kiersivät kvartetit ja pienyhtyeet maatamme kesällä 2017 keräten samalla varoja luonnonsuojelun hyväksi. YL:ssä tutustunut kuusikko esiintyi sinä kesänä Äkäslompolossa, Tunturipojat-sekstetti oli syntynyt.</p>
-        </section>
-
-        <img src="vanharyhmakuva.webp" alt="Tunturipojat Äkäslompolossa.">
-
-        <section>
-            <p>Kuuden hengen lauluyhtyeessä ääriäänet ovat vahvistettuna, mikä mahdollistaa monipuolisemman äänimaiseman perinteiseen kvartettiin verrattuna. Läheisintä ohjelmistoa lauluyhtyeelle ovat perinteiset kansallisromanttiset mieskuoroteokset, mutta sekstetti taipuu myös viihteellisempään nykymusiikkiin.</p>
+            <section id="me" class="section">
+            <p>Tunturipojat on Ylioppilaskunnan Laulajista ponnistanut kuuden hengen lauluyhtye. Vuonna 2017 YL juhlisti 100-vuotiasta Suomea herättämällä eloon yli&shy;oppilaiden kesä&shy;kuoro&shy;perinteen. Valko&shy;lakkisten laulajien kesä&shy;konsert&shy;teja oli kuultu ympäri Suomen niemen jo 1800-luvulla, ja samaan tapaan kiersivät kvartetit ja pienyhtyeet maatamme kesällä 2017 keräten samalla varoja luonnon&shy;suojelun hyväksi. YL:ssä tutustunut kuusikko esiintyi sinä kesänä Äkäs&shy;lompolossa, Tunturipojat-sekstetti oli syntynyt.</p>
+    </div>      
+            <footer>
+            <img src="vanharyhmakuva.webp" alt="Tunturipojat Äkäslompolossa.">
+            </footer>
+    <div class="content2">
+            <p>Kuuden hengen lauluyhtyeessä ääriäänet ovat vahvistettuna, mikä mahdollistaa monipuolisemman äänimaiseman perinteiseen kvartettiin verrattuna. Läheisintä ohjelmistoa laulu&shy;yhtyeelle ovat perinteiset kansallis&shy;romanttiset mies&shy;kuoro&shy;teokset, mutta sekstetti taipuu myös viihteellisempään nykymusiikkiin.</p>
         </section>
     </div>
-
+    
     <script>
-        document.querySelectorAll('.navbar .nav-links a').forEach(link => {
+            document.querySelectorAll('.navbar a').forEach(link => {
             link.addEventListener('click', e => {
-                const href = e.target.getAttribute('href');
-                if (href.startsWith('#')) {
-                    e.preventDefault();
-                    const section = document.querySelector(href);
-                    if (section) {
-                        window.scrollTo({
-                            top: section.offsetTop - 50,
-                            behavior: 'smooth'
-                        });
-                    }
-                }
+            const id = e.target.getAttribute('href');
+            if (id.startsWith('#')) {
+            e.preventDefault();
+            const section = document.querySelector(id);
+            window.scrollTo({
+            top: section.offsetTop - 50,
+            behavior: 'smooth',
             });
-        });
-    </script>
-</body>
-</html>
+            }
+            });
+            });
+            </script>
+
+            </body>
+            </html>
