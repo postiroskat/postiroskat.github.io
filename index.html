@@ -1,95 +1,12 @@
 <!DOCTYPE html>
 <html lang="fi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tunturipojat</title>
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;700&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <style>
-        /* Yleiset tyylit */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: 'Crimson Pro', sans-serif;
-            text-align: center;
-        }
-
-        /* Navigaatiopalkki */
-        .navbar {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            align-items: center;
-            background-color: black;
-            position: fixed;
-            top: 0;
-            width: 100%;
-            padding: 10px;
-        }
-        .navbar h2 a {
-            text-decoration: none;
-            color: white;
-            font-size: 44px;
-        }
-        .navbar .nav-links a {
-            text-decoration: none;
-            color: white;
-            margin: 0 10px;
-            font-size: 24px;
-        }
-
-        /* Responsiivinen muotoilu mobiililaitteille */
-        @media (max-width: 600px) {
-            .navbar {
-                flex-direction: column;
-                align-items: center;
-            }
-            .navbar .nav-links {
-                margin-top: 10px;
-            }
-            .navbar .nav-links a {
-                font-size: 18px;
-                margin: 5px;
-            }
-            .content2 {
-                margin: 15% 5%;
-            }
-        }
-
-        /* Pääsisällön tyylit */
-        .content {
-            margin-top: 120px;
-        }
-        .content2 {
-            margin: 0 15%;
-        }
-        h1, h2 {
-            font-family: 'Oswald', sans-serif;
-            margin-bottom: 2%;
-        }
-        h1 {
-            font-size: 24px;
-        }
-        h2 {
-            font-size: 24px;
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin: 3% auto;
-        }
-        p {
-            font-family: 'Crimson Pro', sans-serif;
-            text-align: justify;
-            hyphens: auto;
-            margin-bottom: 1%;
-        }
-    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tunturipojat - Esiintymiset</title>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;700&family=Oswald:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
     <nav class="navbar">
