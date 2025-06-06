@@ -53,15 +53,27 @@
     }
     p {
       font-family: 'Crimson Pro', sans-serif;
-      text-align: justify;
+      text-align: center;
       hyphens: auto;
       margin-bottom: 1%;
+      font-size: 18px;
     }
     img {
       max-width: 100%;
       height: auto;
       display: block;
       margin: 3% auto;
+    }
+        .instagram {
+      display: block;
+      width: 3rem;
+      height: 3rem;
+      margin: 1rem auto;
+      background-image: url("https://www.instagram.com/static/images/ico/favicon-192.png/68d99ba29cc8.png");
+      background-size: cover;
+      background-position: center;
+      border-radius: 50%;
+      cursor: pointer;
     }
     @media (max-width: 600px) {
       .navbar {
@@ -102,6 +114,11 @@
       <p>Meitä inspiroi mieskuoroteokset, Toivo Kuula, Suomen luonto ja jylhät tunturit.</p>
     </section>
   </div>
+  
+       <section>
+      <p2>Voit myös seurata meitä Instagramissa:</p2>
+      <a href="https://www.instagram.com/tunturipojat" target="_blank" rel="noopener noreferrer" class="instagram"></a>
+      </section>
 
   <script>
     document.querySelectorAll('.navbar .nav-links a').forEach(link => {
