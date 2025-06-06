@@ -1,157 +1,140 @@
 <!DOCTYPE html>
 <html lang="fi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tunturipojat</title>
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;700&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: 'Crimson Pro', sans-serif;
-            text-align: center;
-        }
-
-        .navbar {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            align-items: center;
-            background-color: black;
-            position: fixed;
-            top: 0;
-            width: 100%;
-            padding: 10px;
-        }
-        .navbar h2 a {
-            text-decoration: none;
-            color: white;
-            font-size: 44px;
-        }
-        .navbar .nav-links a {
-            text-decoration: none;
-            color: white;
-            margin: 0 10px;
-            font-size: 24px;
-        }
-
-        @media (max-width: 600px) {
-            .navbar {
-                flex-direction: column;
-                align-items: center;
-            }
-            .navbar .nav-links {
-                margin-top: 10px;
-            }
-            .navbar .nav-links a {
-                font-size: 18px;
-                margin: 5px;
-            }
-            .content2 {
-                margin: 15% 5%;
-            }
-        }
-
-        .content {
-            margin-top: 120px;
-        }
-        .content2 {
-            margin: 0 15%;
-        }
-
-        h1, h2 {
-            font-family: 'Oswald', sans-serif;
-            margin-bottom: 2%;
-        }
-        h1 {
-            font-size: 24px;
-        }
-        h2 {
-            font-size: 24px;
-        }
-
-        img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin: 3% auto;
-        }
-
-        p {
-            font-family: 'Crimson Pro', sans-serif;
-            text-align: justify;
-            hyphens: auto;
-            margin-bottom: 1%;
-        }
-
-        .instagram {
-            display: block;
-            width: 3rem;
-            height: 3rem;
-            margin: 1rem auto;
-            background-image: url("https://www.instagram.com/static/images/ico/favicon-192.png/68d99ba29cc8.png");
-            background-size: cover;
-            background-position: center;
-            border-radius: 50%;
-            cursor: pointer;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tunturipojat – Tilaa</title>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;700&family=Oswald:wght@400;700&display=swap" rel="stylesheet"/>
+  <link rel="icon" href="../favicon.ico" type="image/x-icon"/>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Crimson Pro', sans-serif;
+      text-align: center;
+    }
+    .navbar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      background-color: black;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      padding: 10px;
+      z-index: 1000;
+    }
+    .navbar h2 a {
+      text-decoration: none;
+      color: white;
+      font-size: 44px;
+    }
+    .navbar .nav-links a {
+      text-decoration: none;
+      color: white;
+      margin: 0 10px;
+      font-size: 24px;
+    }
+    .content {
+      margin-top: 120px;
+      padding: 0 15%;
+    }
+    h1, h2 {
+      font-family: 'Oswald', sans-serif;
+      margin-bottom: 2%;
+      font-size: 24px;
+    }
+    p {
+      font-family: 'Crimson Pro', sans-serif;
+      text-align: justify;
+      hyphens: auto;
+      margin-bottom: 1%;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 3% auto;
+    }
+    .instagram {
+      display: block;
+      width: 3rem;
+      height: 3rem;
+      margin: 1rem auto;
+      background-image: url("https://www.instagram.com/static/images/ico/favicon-192.png/68d99ba29cc8.png");
+      background-size: cover;
+      background-position: center;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+    @media (max-width: 600px) {
+      .navbar {
+        flex-direction: column;
+        align-items: center;
+      }
+      .navbar .nav-links {
+        margin-top: 10px;
+      }
+      .navbar .nav-links a {
+        font-size: 18px;
+        margin: 5px;
+      }
+      .content {
+        padding: 15% 5%;
+      }
+    }
+  </style>
 </head>
 <body>
-    <nav class="navbar">
-        <h2><a href="../index.html">Tunturipojat</a></h2>
-        <div class="nav-links">
-            <a href="tarinamme.html">Tarinamme</a>
-            <a href="esiintymiset.html">Esiintymiset</a>
-            <a href="tilaa.html">Tilaa</a>
-        </div>
-    </nav>
-
-    <div class="content">
-        <header id="header">
-            <h1>Klassikoita tai kevyttä – Tilaa Tunturipojat juhlaasi!</h1>
-        </header>
+  <nav class="navbar">
+    <h2><a href="../index.html">Tunturipojat</a></h2>
+    <div class="nav-links">
+      <a href="tarinamme.html">Tarinamme</a>
+      <a href="esiintymiset.html">Esiintymiset</a>
+      <a href="tilaa.html">Tilaa</a>
     </div>
+  </nav>
 
-    <div class="content2">
-        <section id="me" class="section">
-            <p>Tunturipojat jatkavat Ylioppilaskunnan Laulajien kvartettiperinteitä, jotka ulottuvat aina 1800-luvulle saakka.</p>
-            <p>Tunturipoikien sekstetti sopii niin arvokkaisiin juhlatilaisuuksiin, osaksi konferenssien asiaohjelmaa, syntymäpäiviin kuin rentoihin kesätilaisuuksiinkin. Meiltä luonnistuvat niin mieskuoroklassikot, serenadit, juomalaulut kuin ikivihreätkin. Autamme mielellämme ohjelman suunnittelussa ja kappalevalinnoissa. Seremoniamestarimme huolehtii myös spiikeistä, jotka tuovat hymyn huulille osana musiikkiesitystämme.</p>
-            <p>Ota yhteyttä ja tee juhlastasi ikimuistoinen Tunturipoikien uljaan laulun voimin!</p>
-            <p>Eero Mäki-Lohiluoma</p>
-            <p>Puheenjohtaja</p>
-            <p>040 771 5111</p>
-            <p><a href="mailto:info@tunturipojat.fi">info@tunturipojat.fi</a></p>
-            <p>Seuraa meitä Instagramissa:</p>
-            <a href="https://www.instagram.com/tunturipojat" target="_blank" rel="noopener noreferrer" class="instagram"></a>
-        </section>
-    </div>
+  <div class="content">
+    <h1>Klassikoita tai kevyttä – Tilaa Tunturipojat juhlaasi!</h1>
 
-    <div class="content">
-        <img src="haakuva.webp" alt="Tunturipojat hääkeikalla">
-    </div>
+    <section>
+      <p>Tunturipojat jatkavat Ylioppilaskunnan Laulajien kvartettiperinteitä, jotka ulottuvat aina 1800-luvulle saakka.</p>
+      <p>Tunturipoikien sekstetti sopii niin arvokkaisiin juhlatilaisuuksiin, osaksi konferenssien asiaohjelmaa, syntymäpäiviin kuin rentoihin kesätilaisuuksiinkin. Meiltä luonnistuvat niin mieskuoroklassikot, serenadit, juomalaulut kuin ikivihreätkin. Autamme mielellämme ohjelman suunnittelussa ja kappalevalinnoissa. Seremoniamestarimme huolehtii myös spiikeistä, jotka tuovat hymyn huulille osana musiikkiesitystämme.</p>
+      <p>Ota yhteyttä ja tee juhlastasi ikimuistoinen Tunturipoikien uljaan laulun voimin!</p>
 
-    <script>
-        document.querySelectorAll('.navbar .nav-links a').forEach(link => {
-            link.addEventListener('click', e => {
-                const href = e.target.getAttribute('href');
-                if (href.startsWith('#')) {
-                    e.preventDefault();
-                    const section = document.querySelector(href);
-                    if (section) {
-                        window.scrollTo({
-                            top: section.offsetTop - 50,
-                            behavior: 'smooth'
-                        });
-                    }
-                }
+      <p>Eero Mäki-Lohiluoma</p>
+      <p>Puheenjohtaja</p>
+      <p>040 771 5111</p>
+      <p><a href="mailto:info@tunturipojat.fi">info@tunturipojat.fi</a></p>
+
+      <p>SSSeuraa meitä Instagramissa:</p>
+      <a href="https://www.instagram.com/tunturipojat" target="_blank" rel="noopener noreferrer" class="instagram"></a>
+    </section>
+
+    <img src="haakuva.webp" alt="Tunturipojat hääkeikalla">
+  </div>
+
+  <script>
+    document.querySelectorAll('.navbar .nav-links a').forEach(link => {
+      link.addEventListener('click', e => {
+        const href = e.target.getAttribute('href');
+        if (href.startsWith('#')) {
+          e.preventDefault();
+          const section = document.querySelector(href);
+          if (section) {
+            window.scrollTo({
+              top: section.offsetTop - 50,
+              behavior: 'smooth'
             });
-        });
-    </script>
+          }
+        }
+      });
+    });
+  </script>
 </body>
 </html>
