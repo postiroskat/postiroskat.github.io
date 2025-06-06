@@ -1,142 +1,170 @@
 <!DOCTYPE html>
 <html lang="fi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tunturipojat – Esiintymiset</title>
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;700&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <style>
-        /* Yleiset tyylit */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: 'Crimson Pro', sans-serif;
-            text-align: center;
-        }
-
-        /* Navigaatiopalkki */
-        .navbar {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            align-items: center;
-            background-color: black;
-            position: fixed;
-            top: 0;
-            width: 100%;
-            padding: 10px;
-        }
-        .navbar h2 a {
-            text-decoration: none;
-            color: white;
-            font-size: 44px;
-        }
-        .navbar .nav-links a {
-            text-decoration: none;
-            color: white;
-            margin: 0 10px;
-            font-size: 24px;
-        }
-
-        /* Responsiivinen muotoilu mobiililaitteille */
-        @media (max-width: 600px) {
-            .navbar {
-                flex-direction: column;
-                align-items: center;
-            }
-            .navbar .nav-links {
-                margin-top: 10px;
-            }
-            .navbar .nav-links a {
-                font-size: 18px;
-                margin: 5px;
-            }
-            .content2 {
-                margin: 15% 5%;
-            }
-        }
-
-        /* Pääsisällön tyylit */
-        .content {
-            margin-top: 120px;
-        }
-        .content2 {
-            margin: 0 15%;
-        }
-        h1, h2, h3 {
-            font-family: 'Oswald', sans-serif;
-            margin-bottom: 2%;
-        }
-        h1 {
-            font-size: 24px;
-        }
-        h2 {
-            font-size: 24px;
-        }
-        h3 {
-            font-size: 20px;
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin: 3% auto;
-        }
-        p {
-            font-family: 'Crimson Pro', sans-serif;
-            text-align: justify;
-            hyphens: auto;
-            margin-bottom: 1%;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tunturipojat – Esiintymiset</title>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;700&family=Oswald:wght@400;700&display=swap" rel="stylesheet"/>
+  <link rel="icon" href="../favicon.ico" type="image/x-icon"/>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Crimson Pro', sans-serif;
+      text-align: center;
+    }
+    .navbar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      background-color: black;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      padding: 10px;
+      z-index: 1000;
+    }
+    .navbar h2 a {
+      text-decoration: none;
+      color: white;
+      font-size: 44px;
+    }
+    .navbar .nav-links a {
+      text-decoration: none;
+      color: white;
+      margin: 0 10px;
+      font-size: 24px;
+    }
+    .content {
+      margin-top: 120px;
+      padding: 0 15%;
+    }
+    h1, h2, h3 {
+      font-family: 'Oswald', sans-serif;
+      margin-bottom: 2%;
+    }
+    h1 {
+      font-size: 24px;
+    }
+    h2 {
+      font-size: 24px;
+    }
+    h3 {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 3% auto;
+    }
+    .event-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+      text-align: left;
+      margin-top: 2rem;
+    }
+    .event {
+      border-left: 4px solid #000;
+      padding-left: 1rem;
+    }
+    .event-date {
+      font-weight: bold;
+      display: block;
+      margin-bottom: 0.2rem;
+    }
+    .event-location {
+      font-style: italic;
+    }
+    @media (max-width: 600px) {
+      .navbar {
+        flex-direction: column;
+        align-items: center;
+      }
+      .navbar .nav-links {
+        margin-top: 10px;
+      }
+      .navbar .nav-links a {
+        font-size: 18px;
+        margin: 5px;
+      }
+      .content {
+        padding: 15% 5%;
+      }
+    }
+  </style>
 </head>
 <body>
-    <nav class="navbar">
-        <h2><a href="../index.html">Tunturipojat</a></h2>
-        <div class="nav-links">
-            <a href="tarinamme.html">Tarinamme</a>
-            <a href="esiintymiset.html">Esiintymiset</a>
-            <a href="tilaa.html">Tilaa</a>
-        </div>
-    </nav>
-
-    <div class="content">
-        <img src="mustavalko.webp" alt="Mustavalkoinen ryhmäkuva">
-        <h1>Esiintymiset</h1>
-        <section>
-            <h3>2024</h3>
-        </section>
+  <nav class="navbar">
+    <h2><a href="../index.html">Tunturipojat</a></h2>
+    <div class="nav-links">
+      <a href="tarinamme.html">Tarinamme</a>
+      <a href="esiintymiset.html">Esiintymiset</a>
+      <a href="tilaa.html">Tilaa</a>
     </div>
+  </nav>
 
-    <div class="content2">
-        <p>29.2.2024 Farmasian tiedekunnan ja Bio- ja ympäristötieteiden tiedekunnan yhteinen 20-vuotisjuhla, Helsingin yliopiston juhlasali</p>
-        <p>10.3.2024 Kastejuhlat, Helsinki</p>
-        <p>13.6.2024 The Neurosciences and Music Conference VIII -avajaistilaisuus, Helsingin yliopiston juhlasali</p>
-        <p>29.6.2024 Hääjuhla, Espoo</p>
-        <p>20.7.2024 Morsiusmessu ja hääjuhla, Lohja</p>
-        <p>28.9.2024 Hääjuhla, Espoo & Kirkkonummi</p>
+  <div class="content">
+    <img src="mustavalko.webp" alt="Mustavalkoinen ryhmäkuva">
+    <h1>Esiintymiset</h1>
+    <h3>2024</h3>
+
+    <div class="event-list">
+      <div class="event">
+        <span class="event-date">29.2.2024</span>
+        <span>Farmasian ja Bio- ja ympäristötieteiden tiedekuntien 20-vuotisjuhla</span><br>
+        <span class="event-location">Helsingin yliopiston juhlasali</span>
+      </div>
+      <div class="event">
+        <span class="event-date">10.3.2024</span>
+        <span>Kastejuhlat</span><br>
+        <span class="event-location">Helsinki</span>
+      </div>
+      <div class="event">
+        <span class="event-date">13.6.2024</span>
+        <span>The Neurosciences and Music Conference VIII – avajaistilaisuus</span><br>
+        <span class="event-location">Helsingin yliopiston juhlasali</span>
+      </div>
+      <div class="event">
+        <span class="event-date">29.6.2024</span>
+        <span>Hääjuhla</span><br>
+        <span class="event-location">Espoo</span>
+      </div>
+      <div class="event">
+        <span class="event-date">20.7.2024</span>
+        <span>Morsiusmessu ja hääjuhla</span><br>
+        <span class="event-location">Lohja</span>
+      </div>
+      <div class="event">
+        <span class="event-date">28.9.2024</span>
+        <span>Hääjuhla</span><br>
+        <span class="event-location">Espoo & Kirkkonummi</span>
+      </div>
     </div>
+  </div>
 
-    <script>
-        document.querySelectorAll('.navbar .nav-links a').forEach(link => {
-            link.addEventListener('click', e => {
-                const href = e.target.getAttribute('href');
-                if (href.startsWith('#')) {
-                    e.preventDefault();
-                    const section = document.querySelector(href);
-                    if (section) {
-                        window.scrollTo({
-                            top: section.offsetTop - 50,
-                            behavior: 'smooth'
-                        });
-                    }
-                }
+  <script>
+    document.querySelectorAll('.navbar .nav-links a').forEach(link => {
+      link.addEventListener('click', e => {
+        const href = e.target.getAttribute('href');
+        if (href.startsWith('#')) {
+          e.preventDefault();
+          const section = document.querySelector(href);
+          if (section) {
+            window.scrollTo({
+              top: section.offsetTop - 50,
+              behavior: 'smooth'
             });
-        });
-    </script>
+          }
+        }
+      });
+    });
+  </script>
 </body>
 </html>
