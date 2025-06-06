@@ -1,135 +1,124 @@
 <!DOCTYPE html>
 <html lang="fi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tunturipojat</title>
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;700&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <style>
-        /* Yleiset tyylit */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: 'Crimson Pro', sans-serif;
-            text-align: center;
-        }
-
-        /* Navigaatiopalkki */
-        .navbar {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            align-items: center;
-            background-color: black;
-            position: fixed;
-            top: 0;
-            width: 100%;
-            padding: 10px;
-        }
-        .navbar h2 a {
-            text-decoration: none;
-            color: white;
-            font-size: 44px;
-        }
-        .navbar .nav-links a {
-            text-decoration: none;
-            color: white;
-            margin: 0 10px;
-            font-size: 24px;
-        }
-
-        /* Responsiivinen muotoilu mobiililaitteille */
-        @media (max-width: 600px) {
-            .navbar {
-                flex-direction: column;
-                align-items: center;
-            }
-            .navbar .nav-links {
-                margin-top: 10px;
-            }
-            .navbar .nav-links a {
-                font-size: 18px;
-                margin: 5px;
-            }
-            .content2 {
-                margin: 15% 5%;
-            }
-        }
-
-        /* Pääsisällön tyylit */
-        .content {
-            margin-top: 120px;
-        }
-        .content2 {
-            margin: 0 15%;
-        }
-        h1, h2 {
-            font-family: 'Oswald', sans-serif;
-            margin-bottom: 2%;
-        }
-        h1 {
-            font-size: 24px;
-        }
-        h2 {
-            font-size: 24px;
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin: 3% auto;
-        }
-        p {
-            font-family: 'Crimson Pro', sans-serif;
-            text-align: justify;
-            hyphens: auto;
-            margin-bottom: 1%;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tunturipojat</title>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;700&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Crimson Pro', sans-serif;
+      text-align: center;
+    }
+    .navbar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      background-color: black;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      padding: 10px;
+    }
+    .navbar h2 a {
+      text-decoration: none;
+      color: white;
+      font-size: 44px;
+    }
+    .navbar .nav-links a {
+      text-decoration: none;
+      color: white;
+      margin: 0 10px;
+      font-size: 24px;
+    }
+    .content {
+      margin-top: 120px;
+      padding: 0 15%;
+    }
+    h1, h2 {
+      font-family: 'Oswald', sans-serif;
+      margin-bottom: 2%;
+    }
+    h1 {
+      font-size: 24px;
+    }
+    h2 {
+      font-size: 24px;
+    }
+    p {
+      font-family: 'Crimson Pro', sans-serif;
+      text-align: justify;
+      hyphens: auto;
+      margin-bottom: 1%;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 3% auto;
+    }
+    @media (max-width: 600px) {
+      .navbar {
+        flex-direction: column;
+        align-items: center;
+      }
+      .navbar .nav-links {
+        margin-top: 10px;
+      }
+      .navbar .nav-links a {
+        font-size: 18px;
+        margin: 5px;
+      }
+      .content {
+        padding: 15% 5%;
+      }
+    }
+  </style>
 </head>
 <body>
-    <nav class="navbar">
-        <h2><a href="index.html">Tunturipojat</a></h2>
-        <div class="nav-links">
-            <a href="html/tarinamme.html">Tarinamme</a>
-            <a href="html/esiintymiset.html">Esiintymiset</a>
-            <a href="html/tilaa.html">Tilaa</a>
-        </div>
-    </nav>
-
-    <div class="content">
-        <header id="header">
-            <img src="ryhmakuva.webp" alt="Tunturipojat häissä, kuva: Elisa Niittylä.">
-        </header>
+  <nav class="navbar">
+    <h2><a href="index.html">Tunturipojat</a></h2>
+    <div class="nav-links">
+      <a href="html/tarinamme.html">Tarinamme</a>
+      <a href="html/esiintymiset.html">Esiintymiset</a>
+      <a href="html/tilaa.html">Tilaa</a>
     </div>
+  </nav>
 
-    <div class="content2">
-        <section id="me" class="section">
-            <p>Olemme Ylioppilaskunnan Laulajien riveistä ponnistanut kuusihenkinen lauluyhtye.</p>
-            <p>Meitä inspiroi mieskuoroteokset, Toivo Kuula, Suomen luonto ja jylhät tunturit.</p>
-        </section>
-    </div>
+  <div class="content">
+    <header id="header">
+      <img src="ryhmakuva.webp" alt="Tunturipojat häissä, kuva: Elisa Niittylä.">
+    </header>
 
-    <script>
-        document.querySelectorAll('.navbar .nav-links a').forEach(link => {
-            link.addEventListener('click', e => {
-                const href = e.target.getAttribute('href');
-                if (href.startsWith('#')) {
-                    e.preventDefault();
-                    const section = document.querySelector(href);
-                    if (section) {
-                        window.scrollTo({
-                            top: section.offsetTop - 50,
-                            behavior: 'smooth'
-                        });
-                    }
-                }
+    <section id="me" class="section">
+      <p>Olemme Ylioppilaskunnan Laulajien riveistä ponnistanut kuusihenkinen lauluyhtye.</p>
+      <p>Meitä inspiroi mieskuoroteokset, Toivo Kuula, Suomen luonto ja jylhät tunturit.</p>
+    </section>
+  </div>
+
+  <script>
+    document.querySelectorAll('.navbar .nav-links a').forEach(link => {
+      link.addEventListener('click', e => {
+        const href = e.target.getAttribute('href');
+        if (href.startsWith('#')) {
+          e.preventDefault();
+          const section = document.querySelector(href);
+          if (section) {
+            window.scrollTo({
+              top: section.offsetTop - 50,
+              behavior: 'smooth'
             });
-        });
-    </script>
+          }
+        }
+      });
+    });
+  </script>
 </body>
 </html>
