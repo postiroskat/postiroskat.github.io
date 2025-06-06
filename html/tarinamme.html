@@ -25,19 +25,19 @@
       position: fixed;
       top: 0;
       width: 100%;
-      padding: 1rem;
-      z-index: 1000;
+      padding: 10px;
     }
     .navbar a {
       text-decoration: none;
       color: white;
       font-size: 24px;
-      margin: 0 15px;
+      margin: 0 10px;
     }
     .navbar h2 {
+      text-decoration: none;
       color: white;
-      font-size: 36px;
-      margin: 0 auto;
+      font-size: 44px;
+      
     }
     .content {
       margin-top: 120px;
@@ -45,41 +45,46 @@
     }
     h1, h2, h3 {
       font-family: 'Oswald', sans-serif;
+      margin-bottom: 2%;
     }
     h1 {
-      font-size: 32px;
-      margin-bottom: 1rem;
+      font-size: 24px;
     }
     h2 {
-      font-size: 28px;
-      margin-bottom: 1.5rem;
+      font-size: 24px;
     }
     h3 {
-      font-size: 22px;
-      margin-bottom: 1rem;
+      font-size: 24px;
     }
     p {
+      font-family: 'Crimson Pro', sans-serif;
       text-align: justify;
       hyphens: auto;
-      margin-bottom: 1rem;
+      margin-bottom: 1%;
     }
     img {
       max-width: 100%;
-      margin: 2rem 0;
+      height: auto;
+      display: block;
+      margin: 3% auto;
+
     }
-    @media (max-width: 600px) {
-      .navbar {
-        flex-direction: column;
-        align-items: center;
-      }
-      .navbar a {
-        font-size: 18px;
-        margin: 5px 0;
-      }
-      .content {
-        padding: 0 5%;
-      }
-    }
+        @media (max-width: 600px) {
+            .navbar {
+                flex-direction: column;
+                align-items: center;
+            }
+            .navbar .nav-links {
+                margin-top: 10px;
+            }
+            .navbar .nav-links a {
+                font-size: 18px;
+                margin: 5px;
+            }
+            .content2 {
+                margin: 15% 5%;
+            }
+        }
   </style>
 </head>
 <body>
@@ -92,7 +97,7 @@
     </div>
   </nav>
   <div class="content">
-    <h1>Kesäkuoroperinteestä syntynyt, Lapin jylhissä maisemissa perustettu</h1>
+    <h1>KKKesäkuoroperinteestä syntynyt, Lapin jylhissä maisemissa perustettu</h1>
     <section>
       <p>Tunturipojat on Ylioppilaskunnan Laulajista ponnistanut kuuden hengen lauluyhtye. Vuonna 2017 YL juhlisti 100-vuotiasta Suomea herättämällä eloon ylioppilaiden kesäkuoroperinteen. Valkolakkisten laulajien kesäkonsertteja oli kuultu ympäri Suomen niemen jo 1800-luvulla, ja samaan tapaan kiersivät kvartetit ja pienyhtyeet maatamme kesällä 2017 keräten samalla varoja luonnonsuojelun hyväksi. YL:ssä tutustunut kuusikko esiintyi sinä kesänä Äkäslompolossa, Tunturipojat-sekstetti oli syntynyt.</p>
     </section>
