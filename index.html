@@ -103,6 +103,11 @@
   </div>
 
   <script>
+    document.addEventListener("DOMContentLoaded", function () {
+  const nav = document.querySelector(".navbar");
+  const content = document.querySelector(".content");
+  content.style.marginTop = nav.offsetHeight + "px";
+});
     document.querySelectorAll('.navbar .nav-links a').forEach(link => {
       link.addEventListener('click', e => {
         const href = e.target.getAttribute('href');
